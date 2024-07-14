@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/kidsbuddy/static/css/main.ef3056a1.css",
-    "main.js": "/kidsbuddy/static/js/main.de090e77.js",
+    "main.js": "/kidsbuddy/static/js/main.8e38ae45.js",
     "static/js/206.ec38a9ec.chunk.js": "/kidsbuddy/static/js/206.ec38a9ec.chunk.js",
-    "static/media/logo.svg": "/kidsbuddy/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/kidsbuddy/index.html"
   },
   "entrypoints": [
     "static/css/main.ef3056a1.css",
-    "static/js/main.de090e77.js"
+    "static/js/main.8e38ae45.js"
   ]
 }
