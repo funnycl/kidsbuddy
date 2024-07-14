@@ -1,4 +1,5 @@
 {
+  "homepage": "https://funnycl.github.io/kidsbuddy",
   "name": "kidsbuddy",
   "version": "0.1.0",
   "private": true,
@@ -16,13 +17,13 @@
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.11",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^3.2.0",
     "lodash": "^4.17.21",
     "node-sass": "^7.0.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.3",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.1",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
@@ -30,9 +31,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
