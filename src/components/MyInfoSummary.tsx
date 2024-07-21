@@ -1,3 +1,5 @@
+import "./MyInfoSummary.scss";
+
 export const MyInfoSummary = () => {
-  return <div>MyInfoSummary</div>;
+  return <div className="my-info-summary">MyInfoSummary</div>;
 };
