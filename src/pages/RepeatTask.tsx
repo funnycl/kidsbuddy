@@ -1,3 +1,3 @@
 export const RepeatTask = () => {
-  return <div>RepeatTask</div>;
+  return <div className="mobile-container">RepeatTask</div>;
 };

@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import { Communication } from "./pages/Communication";
 import { Login } from "./pages/Login";
 import { Main } from "./pages/Main";

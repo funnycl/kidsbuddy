@@ -1,3 +1,3 @@
 export const MyInfo = () => {
-  return <div>MyInfo</div>;
+  return <div className="mobile-container">MyInfo</div>;
 };

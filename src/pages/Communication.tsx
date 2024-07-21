@@ -1,3 +1,3 @@
 export const Communication = () => {
-  return <div>Communication</div>;
+  return <div className="mobile-container">Communication</div>;
 };

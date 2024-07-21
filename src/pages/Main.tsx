@@ -2,7 +2,7 @@ import { MyInfoSummary } from "../components/MyInfoSummary";
 
 export const Main = () => {
   return (
-    <div>
+    <div className="mobile-container">
       <MyInfoSummary />
     </div>
   );
