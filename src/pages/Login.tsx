@@ -1,3 +1,29 @@
-export const Login = () => {
-  return <div className="mobile-container">Login</div>;
+import { EmailAuthProvider, getAuth } from "firebase/auth";
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+
+const Login = () => {
+  const uiConfig = {
+    // Popup signin flow rather than redirect flow.
+    // signInFlow: "popup",
+    // We will display Google and Facebook as auth providers.
+    signInOptions: [EmailAuthProvider.PROVIDER_ID],
+    signInSuccessUrl: "/"
+    // callbacks: {
+    //   // Avoid redirects after sign-in.
+    //   signInSuccessWithAuthResult: (authResult: any, redirectUrl?: string) => {
+    //     console.log(authResult, redirectUrl);
+    //     console.log(getAuth().currentUser);
+    //     return false;
+    //   }
+    // }
+  };
+
+  return (
+    <div className="pt-24">
+      <h1 className="mb-3">KIDS BUDDY</h1>
+      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={getAuth()} />
+    </div>
+  );
 };
+
+export { Login };
