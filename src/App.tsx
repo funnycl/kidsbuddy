@@ -3,6 +3,7 @@ import _ from "lodash";
 import { useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.scss";
+import { Admin } from "./pages/Admin";
 import { Communication } from "./pages/Communication";
 import { Login } from "./pages/Login";
 import { Main } from "./pages/Main";
@@ -35,6 +36,7 @@ function App() {
         <Route path="/communication" component={Communication} />
         <Route path="/repeat-task" component={RepeatTask} />
         <Route path="/single-task" component={SingleTask} />
+        <Route path="/admin" component={Admin} />
       </Switch>
     </div>
   );
