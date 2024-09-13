@@ -1,9 +1,23 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MyInfoSummary } from "../components/MyInfoSummary";
 import { useLogin } from "../store/useLogin";
+import { useUserInfo } from "../store/useUserInfo";
 
 export const Main = () => {
   const { isLogin } = useLogin();
+  const { userInfo, getUserInfo } = useUserInfo();
+
+  useEffect(() => {
+    if (isLogin) {
+      getUserInfo();
+    }
+  }, [isLogin]);
+
+  useEffect(() => {
+    console.log("userInfo", userInfo);
+  }, [userInfo]);
+
   if (!isLogin) {
     return (
       <div>
